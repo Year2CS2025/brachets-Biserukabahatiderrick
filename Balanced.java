@@ -19,10 +19,10 @@ public class Balanced{
                 if(stack.isEmpty()){
                     return false;
                 }
-                char top=stack.pop();
-                if((ch==')'&& top!='(')||
-                (ch=='}'&& top!='{')||
-                (ch==']'&& top!='[')){
+                char lastOpened=stack.pop();
+                if((ch==')'&& lastOpened!='(')||
+                (ch=='}'&& lastOpened!='{')||
+                (ch==']'&& lastOpened!='[')){
                   return false;
                 }
             }
